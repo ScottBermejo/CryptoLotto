@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+  {{ super() }} | Play
+{% endblock %}
+
+{% block body %}
+    <h3 class="playHead">Welcome to the Crypto Lottery!</h3>
+    <hr>
+    <div class="instr">
+    <p>For now we are only focused on Bitcoin Buying. It is only 10 dollars
+    for each ticket to enter. You can have multiple tickets. Right now we
+    are capped for a maximum of 10k tickets before the lottery starts and
+    picks a random ticket number. Good Luck!</p>
+    </div>
+    <a href="{{ url_for('shop.home') }}">Buy your Ticket Now!</a>
+    
+
+    
+{% endblock %}
